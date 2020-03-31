@@ -2,7 +2,7 @@ import discord
 
 client = discord.Client()
 
-
+# ログイン時の挙動
 @client.event
 async def on_ready():
     print('Logged in as')
