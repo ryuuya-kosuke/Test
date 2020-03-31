@@ -15,10 +15,10 @@ async def on_ready():
 async def on_message(message):
     # 「おはよう」で始まるか調べる
     if message.content.startswith("おはよう"):
-        # 送り主がbotだった婆い反応したくないので
+        # 送り主がbotだった場合反応したくないので
         if client.user != message.author:
             # メッセージを書きます
-            m = "おはようございます" + message.author.name + "さん！"
+            m = "おはようございます、" + message.author.name + "さん！"
             await message.channel.send(m)
 
 client.run("Njk0MzgyNDAwMTg0MjU0NTE0.XoOVdg.RZ3fl8OG5l54tV31guvNXfmY9BU")
